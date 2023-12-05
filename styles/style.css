@@ -1,0 +1,178 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-size: 14px;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+h6 {
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter Var", "Inter", "Helvetica", sans-serif;
+  line-height: 100%;
+}
+
+header {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  height: 7rem;
+  align-items: center;
+}
+header div:nth-child(1) {
+  text-align: left;
+}
+header div:nth-child(2) {
+  text-align: center;
+}
+header div:nth-child(3) {
+  text-align: right;
+}
+header > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header > div div#streak-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > div div#streak-display > div:not(:last-child) {
+  margin-right: 0.667rem;
+}
+header > div div#streak-display > div {
+  margin: 0.3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+header > div div#streak-display > div > p {
+  font-size: 70%;
+}
+header > div div#streak-display > div div.sphere {
+  aspect-ratio: 1/1;
+  width: 1.4rem;
+  border-radius: 100%;
+  border: solid black 2px;
+}
+header > div div#streak-display > div div.sphere-filled {
+  background-color: #F9C50C;
+}
+
+div#banner {
+  width: 100%;
+  height: 14rem;
+  background-image: url("../assets/art.jpg");
+  background-size: 100%;
+  background-position: center 62%;
+  padding: 2.5rem 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#banner div#pomodoro-timer {
+  padding: 2rem;
+  width: 30rem;
+  height: 11.46rem;
+  background-color: #F8FC4A;
+  border-radius: 35px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div#banner div#pomodoro-timer div#button {
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: #1A1A1A;
+  width: 7rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#banner div#pomodoro-timer div#button img {
+  margin-left: 0.6rem;
+  width: 45%;
+}
+div#banner div#pomodoro-timer div#time {
+  text-align: right;
+  color: #1A1A1A;
+}
+div#banner div#pomodoro-timer div#time h1 {
+  font-size: 4.3rem;
+}
+div#banner div#pomodoro-details {
+  padding: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+}
+div#banner div#pomodoro-details h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+div#banner div#pomodoro-details > div {
+  margin-top: 0.5rem;
+  display: flex;
+}
+div#banner div#pomodoro-details > div div.sphere:not(:last-child) {
+  margin-right: 0.2rem;
+}
+div#banner div#pomodoro-details > div div.sphere {
+  aspect-ratio: 1/1;
+  width: 1.4rem;
+  border: 2px solid #D9D9D9;
+  border-radius: 100%;
+}
+div#banner div#pomodoro-details > div div.sphere-filled {
+  background-color: #D9D9D9;
+}
+
+nav {
+  width: 98%;
+  margin: 0 auto;
+  height: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav p {
+  flex: 1;
+}
+nav ul {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+nav ul li {
+  cursor: pointer;
+}
+nav ul li#active {
+  font-weight: 800;
+}
+nav ul li#active::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.3rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
